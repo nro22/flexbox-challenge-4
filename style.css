@@ -1,0 +1,61 @@
+body{
+    max-width: 1128px;
+    font-family: 'Roboto Regular';
+    margin: 0 auto;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.first{
+    background-color: #F3EED9;
+    text-align: center;
+    min-height: 660px;
+}
+.second h2{
+    text-align: center;
+}
+.third{
+    background-color: #222C2A;
+    color: #ffffff;
+}
+.fourth{
+    background-color: #824936;
+    color: #fff;
+}
+
+.brown{
+    color:#824936;
+    font-family: 'Playfair Display Black';
+}
+.cream{
+    color:#F3EED9;
+}
+
+.light{
+    font-family: 'Roboto Light';
+    font-size: 1.125rem;
+}
+
+.heavy{
+    font-size: 3.75rem;
+}
+
+.small{
+    font-size: 2.25rem;
+}
+
+.row{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.col p{
+    font-size: 1.3125rem;
+}
