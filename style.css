@@ -1,72 +1,91 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif;
+    font-family: "Playfair Display", serif; */
+}
 body{
-    max-width: 1128px;
-    font-family: 'Roboto Regular';
-    margin: 0 auto;
-}
-.content{
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5em;
-    padding-bottom: 5em;
-}
-.first{
-    background-color: #F3EED9;
-    text-align: center;
-    min-height: 660px;
-}
-.second h2{
-    text-align: center;
-}
-.third{
-    background-color: #222C2A;
-    color: #ffffff;
-}
-.fourth{
-    background-color: #824936;
-    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3125rem;
+    margin: 0;
+    line-height: 1.6;
+    color:#222C2a;
 }
 
-.brown{
-    color:#824936;
-    font-family: 'Playfair Display Black';
+img{
+    max-width: 100%;
 }
-.cream{
+h1, h2{
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+}
+
+section{
+    padding: 4em 0;
+}
+
+.container{
+    width:85%;
+    margin: 0 auto;
+    max-width: 1128px;
+}
+
+.section-title{
+    font-size: 2.25rem;
     color:#F3EED9;
 }
 
-.light{
-    font-family: 'Roboto Light';
+.section-title--dark{
+    color:#824936;
+    text-align: center;
+}
+.intro{
+    background: #F3EED9;
+    padding: 200px 0;
+    text-align: center;
+    color: #824936;
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+}
+
+.intro__text{
+    text-transform: uppercase;
     font-size: 1.125rem;
+    letter-spacing: 10px;
+    color: #222C2a;
+    margin: 0 0 .25em;
 }
 
-.heavy{
-    font-size: 3.75rem;
+.intro__title{
+    font-size: 3rem;
 }
 
-.small{
-    font-size: 2.25rem;
+.section-three{
+    background: #222C2a;
+    color:#fff;
+}
+.section-four{
+    background-color: #824936;
+    color:#fff;
 }
 
-/* .first div{
-    top: 50%;
-} */
+@media (min-width:800px) {
+    .col{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
 
-.row{
-    display: flex;
-}
+    .col + .col{
+        margin-left:5em;
+    }
+    
+    .row{
+        display: flex;
+    }
 
-.col{
-    display: flex;
-    flex-direction: column;
-}
-
-img + div{
-    margin-left: 2em;
-}
-div+img{
-    margin-left: 2em;
-}
-
-.col p{
-    font-size: 1.3125rem;
+    .intro__title{
+        font-size: 3.75rem;
+    }    
 }
